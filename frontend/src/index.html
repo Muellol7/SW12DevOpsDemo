@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>DevOpsDemo App</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="app">
+        <!-- Hier wird dein JSON-Inhalt eingefügt -->
+        <h4>Willkommen bei der Historie von Muellol7</h4>
+        <button id='timeButton'>Aktuelle Zeit</button>
+    </div>
+    <path-application><div class="loading"></div></path-application>
+</body>
+<script>
+    function updateTimeButton() {
+        const currentTime = new Date().toLocaleTimeString();
+        document.getElementById('timeButton').textContent = 'Zeit beim Seitenaufruf: ' + currentTime;
+    }
+    // Update the time button when the page loads
+    document.addEventListener('DOMContentLoaded', updateTimeButton);
+</script>
+</html>
