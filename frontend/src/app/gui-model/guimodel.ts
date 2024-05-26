@@ -3,7 +3,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "Muellol7 - FS24 DevOps",
+            "title": "Muellol7 - FS24 DevOps Azure",
             "formList": [
                 {
                     "id": "OwnUserForm",
